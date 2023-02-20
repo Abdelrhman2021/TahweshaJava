@@ -11,17 +11,89 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TahweshaJava"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.TahweshaJava.NoActionBar">
+            android:name=".view.Home"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".view.OnBoarding_1"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".view.OnBoarding_2"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".view.OnBoarding_3"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".view.SignUp"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".view.Registration_Success"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".view.Email_verification_Sent"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".view.Get_Started_Guide"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".view.Get_Started_Guide_2"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".view.Get_Started_Guide_3"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".view.LogIn"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".view.Forgot_Password"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".view.Forgot_Password_Email_Sent"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".view.Setup_Account"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".view.Setup_Mono"
+            android:exported="true">
+        </activity>
+
+
+
     </application>
 
 </manifest>

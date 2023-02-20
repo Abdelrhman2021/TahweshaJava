@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.Home">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:translationY="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Hello "
+                android:textColor="#240F51"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter_regular"/>
+            <TextView
+                android:translationX="43dp"
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="John"
+                android:textColor="#240F51"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter_bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:translationY="20dp"
+                android:text="Your finances are looking good"
+                android:textSize="12sp"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="#CC240F51"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_alignLeft="@+id/search"
+            android:translationX="-50dp"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:translationY="13dp"
+            android:src="@drawable/bell"/>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:translationY="13dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/search"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="80dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="335dp"
+            android:layout_height="335dp"
+            app:cardCornerRadius="24dp"
+            android:layout_gravity="center_horizontal"
+            android:background="">
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_navigation"
+        android:background="@drawable/tapbar_bg"
+        app:itemIconTint="@drawable/home_selector"
+        app:itemHorizontalTranslationEnabled="false"
+        app:labelVisibilityMode="unlabeled" />
+
+</RelativeLayout>

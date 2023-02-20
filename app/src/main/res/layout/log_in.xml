@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FF"
+    tools:context=".view.LogIn">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <include
+            android:layout_margin="5dp"
+            android:id="@+id/back_button"
+            layout="@layout/back_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="16sp"
+            android:textColor="#131313"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="335dp"
+        android:layout_height="390dp"
+        android:layout_centerHorizontal="true"
+        android:translationY="130dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="Welcome Back"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="24sp"
+            android:textColor="#240F51"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:translationY="45dp"
+            android:text="Hey you’re back, fill in your details to get back in"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="14sp"
+            android:textColor="#292B2D"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="291dp"
+            android:translationY="99dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:gravity="center"
+                android:hint="Email"
+                app:boxStrokeWidth="0dp"
+                android:background="@drawable/rounded_box"
+                app:hintTextColor="#8F94A3"
+                app:placeholderTextColor="#040C22">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="290dp"
+                    android:layout_height="55dp"
+                    android:background="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#040C22"
+                    android:fontFamily="@font/inter_medium"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:translationY="77dp"
+                android:gravity="center"
+                android:hint="Password"
+                app:boxStrokeWidth="0dp"
+                android:background="@drawable/rounded_box"
+                app:hintTextColor="#8F94A3"
+                app:placeholderTextColor="#040C22"
+                app:endIconMode="password_toggle"
+                app:endIconTint="#006C32"
+                app:passwordToggleTint="#CECECE">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="290dp"
+                    android:layout_height="55dp"
+                    android:background="@color/white"
+                    android:inputType="textPassword"
+                    android:textColor="#040C22"
+                    android:fontFamily="@font/inter_medium"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="121dp"
+                android:layout_height="17dp"
+                android:translationY="150dp"
+                android:layout_alignParentEnd="true"
+                android:translationX="-10dp"
+                android:text="Forgot Password?"
+                android:fontFamily="@font/inter_medium"
+                android:textSize="14sp"
+                android:textColor="#006C32"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="335dp"
+        android:layout_height="62dp"
+        android:layout_centerHorizontal="true"
+        android:translationY="650dp">
+
+        <Button
+            android:layout_width="186dp"
+            android:layout_height="62dp"
+            android:text="Login"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:textColor="#FCFCFC"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/rounded_button"
+            app:backgroundTint="#006C32"/>
+
+        <Button
+            android:layout_width="94dp"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="#006C32"
+            android:textSize="12sp"
+            app:backgroundTint="#1A2C14DD" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FF"
+    tools:context=".view.Registration_Success">
+    
+    <RelativeLayout
+        android:layout_width="265dp"
+        android:layout_height="245dp"
+        android:translationY="236dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/success"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:translationY="179dp"
+            android:gravity="center"
+            android:text="Hi! John\nWelcome to Tahwesha"
+            android:textSize="24sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="#240F51" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="335dp"
+        android:layout_height="62dp"
+        android:translationY="650dp"
+        android:background="@drawable/rounded_box"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="#006C32"
+        android:gravity="center"
+        android:text="Let’s get started"
+        android:textSize="14sp"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textColor="#FCFCFC"/>
+
+</RelativeLayout>

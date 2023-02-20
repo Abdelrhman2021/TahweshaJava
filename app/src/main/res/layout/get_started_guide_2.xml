@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".view.Get_Started_Guide_2">
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="Skip"
+        android:textColor="#240F51"
+        app:backgroundTint="#FFFFFF"
+        android:translationY="23dp"
+        android:layout_alignParentEnd="true"
+        android:translationX="-16dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:fontFamily="@font/inter_medium" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:translationY="36dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="8dp"
+            android:translationX="20dp"
+            android:text="Get Started"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="24sp"
+            android:textColor="#240F51"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="42dp"
+            android:translationX="20dp"
+            android:text="Get most out of your Brees account"
+            android:fontFamily="@font/inter_regular"
+            android:textSize="12sp"
+            android:textColor="#240F51"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="335dp"
+        android:layout_height="568dp"
+        android:translationY="172dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:src="@drawable/ba_card"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:translationY="148dp"
+            android:src="@drawable/sp_card"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

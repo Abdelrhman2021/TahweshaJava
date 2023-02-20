@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FF"
+    tools:context=".view.Setup_Account">
+
+    <RelativeLayout
+        android:layout_width="335dp"
+        android:layout_height="430dp"
+        android:translationY="150dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="106dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/rocket"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:translationY="285dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="Let’s get your account\nset up!"
+                android:textSize="24sp"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="#13085E" />
+
+            <TextView
+                android:layout_width="276dp"
+                android:layout_height="44dp"
+                android:translationY="85dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Account can be your bank, credit card or your digital wallet."
+                android:textSize="14sp"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="#292B2D" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="335dp"
+        android:layout_height="62dp"
+        android:translationY="650dp"
+        android:background="@drawable/rounded_box"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="#006C32"
+        android:gravity="center"
+        android:text="Let's get started"
+        android:textSize="14sp"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textColor="#FCFCFC"/>
+
+</RelativeLayout>
