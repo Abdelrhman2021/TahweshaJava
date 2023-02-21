@@ -16,12 +16,13 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="41dp"
-            android:translationY="12dp">
+            android:translationY="12dp"
+            tools:ignore="RelativeOverlap">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
-                android:text="Hello "
+                android:text="@string/hello"
                 android:textColor="#240F51"
                 android:textSize="16sp"
                 android:fontFamily="@font/inter_regular"/>
@@ -30,7 +31,7 @@
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
-                android:text="John"
+                android:text="@string/john"
                 android:textColor="#240F51"
                 android:textSize="16sp"
                 android:fontFamily="@font/inter_bold"/>
@@ -38,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="18dp"
                 android:translationY="20dp"
-                android:text="Your finances are looking good"
+                android:text="@string/your_finances_are_looking_good"
                 android:textSize="12sp"
                 android:fontFamily="@font/inter_regular"
                 android:textColor="#CC240F51"/>
@@ -46,12 +47,13 @@
         </RelativeLayout>
 
         <ImageView
-            android:layout_alignLeft="@+id/search"
+            android:layout_alignStart="@+id/search"
             android:translationX="-50dp"
             android:layout_width="38dp"
             android:layout_height="38dp"
             android:translationY="13dp"
-            android:src="@drawable/bell"/>
+            android:src="@drawable/bell"
+            android:contentDescription="@string/bell_icon" />
 
         <ImageView
             android:id="@+id/search"
@@ -59,16 +61,18 @@
             android:layout_height="38dp"
             android:translationY="13dp"
             android:layout_alignParentEnd="true"
-            android:src="@drawable/search"/>
+            android:src="@drawable/search"
+            android:contentDescription="@string/search_icon" />
 
     </RelativeLayout>
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:translationY="80dp">
+        android:translationY="80dp"
+        android:fillViewport="true">
 
-        <FrameLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -86,7 +90,7 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/home_card_bg">
+                        android:background="@drawable/group_20402">
 
                         <RelativeLayout
                             android:layout_width="192dp"
@@ -104,7 +108,8 @@
                                     android:id="@+id/user_photo"
                                     android:layout_width="52dp"
                                     android:layout_height="52dp"
-                                    android:src="@drawable/male" />
+                                    android:src="@drawable/male"
+                                    android:contentDescription="@string/user_icon" />
 
                             </RelativeLayout>
 
@@ -113,7 +118,37 @@
                                 android:layout_height="104dp"
                                 android:translationY="66dp">
 
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/your_available_balance_is"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textSize="11sp"
+                                    android:textColor="#FAFCFF"/>
 
+                                <TextView
+                                    android:id="@+id/available_balance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:translationY="20dp"
+                                    android:hint="@string/_20_983_sar"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="28sp"
+                                    android:textColor="#FFFFFF"
+                                    android:textColorHint="#FFFFFF"
+                                    android:fontFamily="@font/inter_extra_bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:translationY="68dp"
+                                    android:gravity="center"
+                                    android:text="@string/by_this_time_last_month_you_spent_slightly_higher_22_719_sar"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textSize="11sp"
+                                    android:textColor="#FAFCFF"/>
 
                             </RelativeLayout>
 
@@ -125,7 +160,85 @@
                             android:translationY="230dp"
                             android:layout_centerHorizontal="true">
 
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp">
 
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:hint="@string/saudi_nb"
+                                    android:textColorHint="#E5F0FF"
+                                    android:textColor="#E5F0FF"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textSize="12sp"/>
+
+                                <TextView
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:hint="@string/_12_000_00sar"
+                                    android:textColorHint="#FFFFFF"
+                                    android:textColor="#FFFFFF"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textSize="12sp"
+                                    tools:ignore="RelativeOverlap" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:translationY="31dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:hint="@string/al_rajhi_bank"
+                                    android:textColorHint="#E5F0FF"
+                                    android:textColor="#E5F0FF"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textSize="12sp"/>
+
+                                <TextView
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:hint="@string/_950_00_sar"
+                                    android:textColorHint="#FFFFFF"
+                                    android:textColor="#FFFFFF"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textSize="12sp"
+                                    tools:ignore="RelativeOverlap" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:translationY="62dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:hint="@string/saudi_british_bank"
+                                    android:textColorHint="#E5F0FF"
+                                    android:textColor="#E5F0FF"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textSize="12sp"/>
+
+                                <TextView
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:hint="@string/_1_050_00_sar"
+                                    android:textColorHint="#FFFFFF"
+                                    android:textColor="#FFFFFF"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textSize="12sp"
+                                    tools:ignore="RelativeOverlap" />
+
+                            </RelativeLayout>
 
                         </RelativeLayout>
 
@@ -150,9 +263,99 @@
 
             </RelativeLayout>
 
-        </FrameLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:translationY="351dp">
 
-    </ScrollView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="335dp"
+                    android:layout_height="90dp"
+                    app:cardCornerRadius="24dp"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="#006C32">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:translationX="80dp"
+                            android:translationY="16dp"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/inter_semi_bold"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:hint="@string/sort_your_transactions"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="34dp"
+                            android:translationX="80dp"
+                            android:translationY="40dp"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/inter_regular"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:hint="@string/get_points_for_sorting_your_ntransactions"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:translationX="315dp"
+                android:translationY="375dp">
+
+                <include
+                    android:id="@+id/forward_buttonn"
+                    layout="@layout/forward_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"/>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:translationX="45dp"
+                android:translationY="373dp">
+
+                <include
+                    android:id="@+id/noti_icon"
+                    layout="@layout/noti_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="3dp"/>
+
+                <ImageView
+                    android:layout_gravity="end"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/noti_ellipse"
+                    android:contentDescription="@string/ellipse_icon" />
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="238dp"
+                android:translationY="460dp">
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

@@ -9,4 +9,22 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello">Hello</string>
+    <string name="john">John</string>
+    <string name="your_finances_are_looking_good">Your finances are looking good</string>
+    <string name="your_available_balance_is">Your available balance is</string>
+    <string name="_20_983_sar">20,983 SAR</string>
+    <string name="by_this_time_last_month_you_spent_slightly_higher_22_719_sar">By this time last month, you spent slightly higher (22,719 SAR)</string>
+    <string name="saudi_nb">Saudi NB</string>
+    <string name="_12_000_00sar">12,000.00SAR</string>
+    <string name="al_rajhi_bank">Al Rajhi Bank</string>
+    <string name="_950_00_sar">950.00 SAR</string>
+    <string name="saudi_british_bank">Saudi British Bank</string>
+    <string name="_1_050_00_sar">1,050.00 SAR</string>
+    <string name="user_icon">User Icon</string>
+    <string name="bell_icon">Bell Icon</string>
+    <string name="search_icon">Search Icon</string>
+    <string name="sort_your_transactions">Sort your transactions</string>
+    <string name="ellipse_icon">ellipse_icon</string>
+    <string name="get_points_for_sorting_your_ntransactions">Get points for sorting your\ntransactions</string>
 </resources>
