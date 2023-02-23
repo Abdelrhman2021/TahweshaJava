@@ -27,4 +27,11 @@
     <string name="sort_your_transactions">Sort your transactions</string>
     <string name="ellipse_icon">ellipse_icon</string>
     <string name="get_points_for_sorting_your_ntransactions">Get points for sorting your\ntransactions</string>
+    <string name="my_budgets">My Budgets</string>
+    <string name="you_have">You have</string>
+    <string name="_29_880_sar">29,880 SAR</string>
+    <string name="left_out_of_n80_888_budgeted">Left out of N80,888 budgeted</string>
+    <string name="amazed_emoji">😱</string>
+    <string name="sapa_go_soon_catch_you_bros_calm_down">Sapa go soon catch you bros, calm down!!</string>
+    <string name="our_partners">Our Partners</string>
 </resources>
