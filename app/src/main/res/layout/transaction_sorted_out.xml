@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FF"
+    tools:context=".view.Transaction_Sorted_Out">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="441dp"
+        android:background="@drawable/confetti">
+
+        <RelativeLayout
+            android:layout_width="342dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="197dp"
+            android:translationY="120dp"
+            android:translationX="-5dp"
+            android:rotation="-28">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_base"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                app:cardCornerRadius="24dp">
+
+                <RelativeLayout
+                    android:layout_width="314dp"
+                    android:layout_height="145dp"
+                    android:translationY="20dp"
+                    android:translationX="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_regular"
+                            android:textSize="10sp"
+                            android:text="@string/transaction_details"
+                            android:textColor="#5C616F"/>
+
+                        <RelativeLayout
+                            android:layout_width="314dp"
+                            android:layout_height="37dp"
+                            android:translationY="24dp">
+
+                            <ImageView
+                                android:id="@+id/bank_logo"
+                                android:layout_width="37dp"
+                                android:layout_height="37dp"
+                                android:src="@drawable/kuda_bank"/>
+
+                            <TextView
+                                android:id="@+id/bank_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:translationX="49dp"
+                                android:translationY="2dp"
+                                android:fontFamily="@font/inter_medium"
+                                android:textSize="14sp"
+                                android:hint="@string/kuda_bank"
+                                android:textColorHint="#212325"
+                                android:textColor="#212325"/>
+
+                            <TextView
+                                android:id="@+id/balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:translationX="48dp"
+                                android:layout_below="@+id/bank_name"
+                                android:fontFamily="@font/inter_medium"
+                                android:textSize="10sp"
+                                android:hint="@string/_2175836514"
+                                android:textColorHint="#363D4E"
+                                android:textColor="#363D4E"/>
+
+                            <TextView
+                                android:id="@+id/transaction_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:translationY="2dp"
+                                android:layout_alignParentEnd="true"
+                                android:fontFamily="@font/inter_medium"
+                                android:textSize="14sp"
+                                android:hint="@string/_12_000_00_sar"
+                                android:textColorHint="#FF0000"
+                                android:textColor="#FF0000"/>
+
+                            <TextView
+                                android:id="@+id/transaction_date_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/transaction_amount"
+                                android:fontFamily="@font/inter_medium"
+                                android:textSize="10sp"
+                                android:hint="@string/sep_01_at_2_24_pm"
+                                android:textColorHint="#363D4E"
+                                android:textColor="#363D4E"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="295dp"
+                        android:layout_height="60dp"
+                        android:translationY="85dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_regular"
+                            android:textSize="10sp"
+                            android:text="@string/transaction_remark"
+                            android:textColor="#5C616F"/>
+
+                        <TextView
+                            android:id="@+id/transaction_remark"
+                            android:layout_width="295dp"
+                            android:layout_height="40dp"
+                            android:translationY="20dp"
+                            android:fontFamily="@font/inter_semi_bold"
+                            android:textSize="14sp"
+                            android:hint="@string/mc_loc_pos_prch_2134555666_funds_amp_electronic_t_la_lang"
+                            android:textColor="#212325"
+                            android:textColorHint="#212325"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/lower_base"
+                android:layout_width="293.85dp"
+                android:layout_height="185dp"
+                android:translationY="12dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/lower_base"/>
+
+            <ImageView
+                android:id="@+id/upper_base"
+                android:layout_width="326.62dp"
+                android:layout_height="185dp"
+                android:translationY="6dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/upper_base"/>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="164dp"
+            app:cardCornerRadius="28.5dp"
+            android:translationY="205dp"
+            android:translationX="195dp"
+            android:rotation="14">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:translationY="41dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="100dp"
+                    android:backgroundTint="#FFEADD">
+
+                    <ImageView
+                        android:layout_width="28.5dp"
+                        android:layout_height="28.5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/grocery"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:translationY="101dp"
+                    android:layout_centerHorizontal="true"
+                    android:hint="@string/utilities"
+                    android:textColorHint="#0E0646"
+                    android:textColor="#0E0646"
+                    android:fontFamily="@font/inter_bold"
+                    android:textSize="24sp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="311dp"
+        android:layout_height="89dp"
+        android:translationY="461dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:text="@string/great_job"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="#006C32"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:translationY="45dp"
+            android:text="You matched all 20 transactions, you did great John!"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/worksans_medium"
+            android:textColor="#131313"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="335dp"
+        android:layout_height="62dp"
+        android:translationY="706dp"
+        android:background="@drawable/rounded_box"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="#006C32"
+        android:gravity="center"
+        android:text="@string/keep_swiping"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textColor="#FCFCFC"/>
+
+</RelativeLayout>

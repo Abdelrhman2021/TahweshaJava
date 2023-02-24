@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="303dp"
+    android:layout_height="36dp"
+    android:layout_marginBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:cardCornerRadius="100dp"
+        android:backgroundTint="#EEF2F8">
+
+        <TextView
+            android:id="@+id/name_initial"
+            android:layout_width="8dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="@string/j"
+            android:fontFamily="@font/inter_semi_bold"
+            android:textSize="14sp"
+            android:textColorHint="#005CEE"
+            android:textColor="#005CEE"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="136dp"
+        android:layout_height="17dp"
+        android:translationX="48dp"
+        android:fontFamily="@font/inter_medium"
+        android:textSize="14sp"
+        android:hint="@string/john_ogaga"
+        android:textColorHint="#131313"
+        android:textColor="#131313"/>
+
+    <TextView
+        android:id="@+id/bank_name_transaction_time"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:translationX="48dp"
+        android:layout_below="@+id/user_name"
+        android:fontFamily="@font/inter_regular"
+        android:textSize="12sp"
+        android:hint="@string/zenith_bank_12_03_am"
+        android:textColorHint="#212325"
+        android:textColor="#212325"/>
+
+    <TextView
+        android:id="@+id/transaction_amount"
+        android:layout_width="80dp"
+        android:layout_height="17dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textSize="14sp"
+        android:hint="@string/_1_983_sar"
+        android:textColorHint="#1B7A00"
+        android:textColor="#1B7A00"/>
+
+</RelativeLayout>

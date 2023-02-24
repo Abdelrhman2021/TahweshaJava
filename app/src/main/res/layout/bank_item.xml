@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="375dp"
+    android:layout_height="72dp">
+
+    <ImageView
+        android:id="@+id/bank_logo"
+        android:layout_marginStart="3dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/kuda_bank"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/bank_name"
+        android:layout_width="72dp"
+        android:layout_height="17dp"
+        android:translationX="64dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textSize="14sp"
+        android:hint="@string/kuda_bank"
+        android:textColorHint="#212325"
+        android:textColor="#212325"/>
+
+    <TextView
+        android:id="@+id/bank_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:translationX="270dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/inter_medium"
+        android:textSize="14sp"
+        android:hint="@string/_12_000_00_sar"
+        android:textColorHint="#212325"
+        android:textColor="#212325"/>
+
+    <ImageView
+        android:layout_width="375dp"
+        android:layout_height="1dp"
+        android:src="@drawable/line_divider"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

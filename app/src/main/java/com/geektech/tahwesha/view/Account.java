@@ -7,11 +7,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.geektech.tahwesha.R;
 
-public class Home extends AppCompatActivity {
+public class Account extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home);
-
+        setContentView(R.layout.account);
     }
 }
