@@ -70,4 +70,7 @@
     <string name="keep_swiping">Keep Swiping</string>
     <string name="this_is_an_overview_of_all_your_brees_account_so_come_back_later">This is an overview of all your Brees account, so come back later</string>
     <string name="welcome">Welcome</string>
+    <string name="budget">Budget</string>
+    <string name="you_have_no_budget">You have no budget</string>
+    <string name="add_a_new_budget">+ Add a new budget</string>
 </resources>

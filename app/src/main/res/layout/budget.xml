@@ -19,7 +19,7 @@
         <include
             android:layout_margin="5dp"
             android:id="@+id/back_button"
-            layout="@layout/back_button"
+            layout="@layout/green_back_button"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_centerVertical="true"/>
@@ -27,67 +27,123 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/account"
+            android:text="@string/budget"
             android:fontFamily="@font/inter_medium"
             android:textSize="16sp"
-            android:textColor="#131313"
+            android:textColor="#F6F7F8"
             android:layout_centerInParent="true" />
 
+        <include
+            android:layout_margin="5dp"
+            android:id="@+id/back_button"
+            layout="@layout/three_dot_menu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+
     </RelativeLayout>
+
+    <ImageView
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:translationY="52dp"
+        android:translationX="-22dp"
+        android:rotation="17"
+        android:src="@drawable/coint"/>
+
+    <ImageView
+        android:layout_width="208dp"
+        android:layout_height="208dp"
+        android:translationY="134dp"
+        android:translationX="340dp"
+        android:rotation="158"
+        android:src="@drawable/coin"/>
 
     <RelativeLayout
         android:layout_width="375dp"
-        android:layout_height="461dp"
+        android:layout_height="70dp"
         android:layout_centerHorizontal="true"
-        android:translationY="150dp">
+        android:translationY="120dp">
+
+        <TextView
+            android:layout_width="335dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:fontFamily="@font/inter_extra_bold"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:translationY="46dp"
             android:layout_centerHorizontal="true"
-            android:text="@string/your_available_balance_is"
+            android:hint="@string/you_have_no_budget"
+            android:textColorHint="#FFFFFF"
             android:fontFamily="@font/inter_medium"
             android:textSize="14sp"
-            android:textColor="#91919F"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:translationY="28dp"
-            android:layout_centerHorizontal="true"
-            android:hint="@string/_20_983_sar"
-            android:textColorHint="#161719"
-            android:fontFamily="@font/inter_bold"
-            android:textSize="36sp"
             android:textColor="#161719"/>
-
-        <RelativeLayout
-            android:layout_width="375dp"
-            android:layout_height="wrap_content"
-            android:translationY="150dp">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:listitem="@layout/bank_item"
-                tools:itemCount="4"/>
-
-        </RelativeLayout>
 
     </RelativeLayout>
 
-    <Button
-        android:layout_width="335dp"
-        android:layout_height="62dp"
-        android:translationY="650dp"
-        android:background="@drawable/rounded_box"
-        android:layout_centerHorizontal="true"
-        app:backgroundTint="#006C32"
-        android:gravity="center"
-        android:text="@string/add_new_account"
-        android:textSize="14sp"
-        android:fontFamily="@font/inter_semi_bold"
-        android:textColor="#FCFCFC"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:translationY="205dp"
+            app:cardCornerRadius="32dp">
+
+            <RelativeLayout
+                android:layout_width="335dp"
+                android:layout_height="297dp"
+                android:translationY="97dp"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="127dp"
+                    android:layout_height="127dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/piggybank"/>
+
+                <TextView
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:translationY="142dp"
+                    android:gravity="center"
+                    android:text="@string/welcome"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textColor="#150B5B"/>
+
+                <TextView
+                    android:layout_width="225dp"
+                    android:layout_height="34dp"
+                    android:translationY="179dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/this_is_an_overview_of_all_your_brees_account_so_come_back_later"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="#BF150B5B"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/rounded_box"
+                    android:layout_centerHorizontal="true"
+                    app:backgroundTint="#006C32"
+                    android:gravity="center"
+                    android:text="@string/add_a_new_budget"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/inter_semi_bold"
+                    android:textColor="#FCFCFC"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
