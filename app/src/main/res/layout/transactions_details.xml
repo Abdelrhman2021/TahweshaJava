@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F5F7FF"
     tools:context=".view.MyAccount">
 
     <RelativeLayout
@@ -27,7 +26,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/my_account"
+            android:text="@string/transactions_details"
             android:fontFamily="@font/inter_medium"
             android:textSize="16sp"
             android:textColor="#131313"
@@ -37,41 +36,65 @@
 
     <RelativeLayout
         android:layout_width="335dp"
-        android:layout_height="631dp"
+        android:layout_height="650dp"
         android:layout_centerHorizontal="true"
-        android:translationY="120dp">
+        android:translationY="76dp">
 
-        <ImageView
-            android:id="@+id/bank_logo"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+        <androidx.cardview.widget.CardView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/kuda_bank"/>
+            app:cardCornerRadius="134dp"
+            android:backgroundTint="#EEF2F8">
+
+            <TextView
+                android:id="@+id/name_initial"
+                android:layout_width="11dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="@string/j"
+                android:fontFamily="@font/inter_semi_bold"
+                android:textSize="19sp"
+                android:textColorHint="#005CEE"
+                android:textColor="#005CEE"/>
+
+        </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/bank_name"
+            android:id="@+id/transactions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:translationY="64dp"
+            android:translationY="68dp"
             android:layout_centerHorizontal="true"
-            android:hint="@string/kuda_bank"
+            android:hint="@string/transfer_to_philips"
             android:textColorHint="#111827"
             android:fontFamily="@font/inter_semi_bold"
             android:textSize="16sp"
-            android:textColor="#161719"/>
+            android:textColor="#111827"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/dropdown_menu"
+            android:layout_width="155dp"
+            android:layout_height="46dp"
+            android:translationY="119dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/transaction_category"/>
+            <!--android:prompt="@string/prompt"-->
 
         <androidx.cardview.widget.CardView
-            android:layout_width="335dp"
-            android:layout_height="192dp"
-            android:translationY="123dp"
-            app:cardCornerRadius="16dp">
+            android:layout_width="327dp"
+            android:layout_height="112dp"
+            android:translationY="197dp"
+            app:cardCornerRadius="16dp"
+            android:backgroundTint="#F9FAFB">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <RelativeLayout
-                    android:layout_width="300dp"
+                    android:layout_width="279dp"
                     android:layout_height="24dp"
                     android:translationY="24dp"
                     android:layout_centerHorizontal="true">
@@ -79,78 +102,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/type_of_account"
+                        android:text="@string/type"
                         android:layout_centerVertical="true"
                         android:fontFamily="@font/inter_regular"
                         android:textSize="14sp"
                         android:textColor="#6C727F"/>
 
                     <TextView
-                        android:id="@+id/type_of_account"
+                        android:id="@+id/type"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="@string/savings"
+                        android:hint="@string/credit"
                         android:layout_centerVertical="true"
                         android:layout_alignParentEnd="true"
                         android:fontFamily="@font/inter_regular"
-                        android:textSize="14sp"
-                        android:textColorHint="#121826"
-                        android:textColor="#121826"/>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="300dp"
-                    android:layout_height="24dp"
-                    android:translationY="64dp"
-                    android:layout_centerHorizontal="true">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/account_no"
-                        android:layout_centerVertical="true"
-                        android:fontFamily="@font/inter_regular"
-                        android:textSize="14sp"
-                        android:textColor="#6C727F"/>
-
-                    <TextView
-                        android:id="@+id/account_number"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/_1234567890"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:fontFamily="@font/inter_regular"
-                        android:textSize="14sp"
-                        android:textColorHint="#121826"
-                        android:textColor="#121826"/>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="300dp"
-                    android:layout_height="24dp"
-                    android:translationY="104dp"
-                    android:layout_centerHorizontal="true">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/available_balance"
-                        android:layout_centerVertical="true"
-                        android:fontFamily="@font/inter_regular"
-                        android:textSize="14sp"
-                        android:textColor="#6C727F"/>
-
-                    <TextView
-                        android:id="@+id/available_balance"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/_12_000_00_sar"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:fontFamily="@font/inter_semi_bold"
                         android:textSize="14sp"
                         android:textColorHint="#1B7A00"
                         android:textColor="#1B7A00"/>
@@ -158,25 +123,25 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="300dp"
+                    android:layout_width="279dp"
                     android:layout_height="24dp"
-                    android:translationY="144dp"
+                    android:translationY="64dp"
                     android:layout_centerHorizontal="true">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/date_added"
+                        android:text="@string/description"
                         android:layout_centerVertical="true"
                         android:fontFamily="@font/inter_regular"
                         android:textSize="14sp"
                         android:textColor="#6C727F"/>
 
                     <TextView
-                        android:id="@+id/date_time_added"
+                        android:id="@+id/description"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="@string/_15_05_20_10_03_am"
+                        android:hint="@string/payment_for_coffee"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:fontFamily="@font/inter_regular"
@@ -191,46 +156,146 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="335dp"
-            android:layout_height="292dp"
-            android:translationY="339dp"
-            app:cardCornerRadius="10dp">
+            android:layout_width="327dp"
+            android:layout_height="112dp"
+            android:translationY="333dp"
+            app:cardCornerRadius="16dp"
+            android:backgroundTint="#F9FAFB">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <RelativeLayout
-                    android:layout_width="303dp"
-                    android:layout_height="20dp"
-                    android:translationY="16dp"
+                    android:layout_width="279dp"
+                    android:layout_height="24dp"
+                    android:translationY="24dp"
                     android:layout_centerHorizontal="true">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/recent_transactions"
+                        android:text="@string/bank"
                         android:layout_centerVertical="true"
-                        android:fontFamily="@font/inter_semi_bold"
-                        android:textSize="12sp"
-                        android:textColor="#131313"/>
+                        android:fontFamily="@font/inter_regular"
+                        android:textSize="14sp"
+                        android:textColor="#6C727F"/>
 
-                    <include
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_alignParentEnd="true"
+                    <TextView
+                        android:id="@+id/bank_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/guaranty_trust_bank"
                         android:layout_centerVertical="true"
-                        layout="@layout/small_forward_button_black"/>
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/inter_regular"
+                        android:textSize="14sp"
+                        android:textColorHint="#121826"
+                        android:textColor="#121826"/>
 
                 </RelativeLayout>
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:layout_width="303dp"
-                    android:layout_height="wrap_content"
-                    android:translationY="52dp"
-                    android:layout_centerHorizontal="true"
-                    tools:listitem="@layout/transactions_item"
-                    tools:itemCount="4" />
+                <RelativeLayout
+                    android:layout_width="279dp"
+                    android:layout_height="24dp"
+                    android:translationY="64dp"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/amount"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/inter_regular"
+                        android:textSize="14sp"
+                        android:textColor="#6C727F"/>
+
+                    <TextView
+                        android:id="@+id/amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/_42_209sar"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/inter_semi_bold"
+                        android:textSize="14sp"
+                        android:textColorHint="#1B7A00"
+                        android:textColor="#1B7A00"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="327dp"
+            android:layout_height="112dp"
+            android:translationY="469dp"
+            app:cardCornerRadius="16dp"
+            android:backgroundTint="#F9FAFB">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="279dp"
+                    android:layout_height="24dp"
+                    android:translationY="24dp"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/inter_regular"
+                        android:textSize="14sp"
+                        android:textColor="#6C727F"/>
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/_10_sep_2021"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/inter_regular"
+                        android:textSize="14sp"
+                        android:textColorHint="#121826"
+                        android:textColor="#121826"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="279dp"
+                    android:layout_height="24dp"
+                    android:translationY="64dp"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/inter_regular"
+                        android:textSize="14sp"
+                        android:textColor="#6C727F"/>
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/_12_03_am"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/inter_regular"
+                        android:textSize="14sp"
+                        android:textColorHint="#121826"
+                        android:textColor="#121826"/>
+
+                </RelativeLayout>
 
             </RelativeLayout>
 

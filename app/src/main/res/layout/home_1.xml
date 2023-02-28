@@ -490,8 +490,8 @@
                 android:layout_height="wrap_content"
                 android:translationY="775dp"
                 android:layout_centerHorizontal="true"
-                tools:listitem="@layout/parteners_item"
-                tools:itemCount="10"/>
+                android:contentDescription="@string/partners"
+                tools:listitem="@layout/parteners_item" />
 
         </RelativeLayout>
 

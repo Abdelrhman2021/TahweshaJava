@@ -24,107 +24,128 @@
 
         <activity
             android:name=".view.OnBoarding_1"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.OnBoarding_2"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.OnBoarding_3"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.SignUp"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.Registration_Success"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.Email_verification_Sent"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.Get_Started_Guide"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.Get_Started_Guide_2"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.Get_Started_Guide_3"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.LogIn"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.Forgot_Password"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.Forgot_Password_Email_Sent"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.Setup_Account"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.Setup_Mono"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.Home"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.Home_1"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.Account"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.MyAccount"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.Sorting_Transactions"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.Transaction_Sorted_Out"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".view.Budget"
-            android:exported="true">
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".view.Transactions"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".view.Transactions_Details"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".view.Transactions_Filter"
+            android:theme="@style/Theme.TahweshaJava.PopUp"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".view.Notification"
+            android:exported="false">
         </activity>
 
     </application>

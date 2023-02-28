@@ -35,7 +35,7 @@
 
         <include
             android:layout_margin="5dp"
-            android:id="@+id/back_button"
+            android:id="@+id/menu_button"
             layout="@layout/three_dot_menu"
             android:layout_width="32dp"
             android:layout_height="32dp"

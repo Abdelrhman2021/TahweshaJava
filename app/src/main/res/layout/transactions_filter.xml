@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.Transactions_Filter">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="707dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/filter_bg">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="6dp"
+            android:translationY="16dp"
+            android:src="@drawable/small_rounded_line"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="327dp"
+            android:layout_height="28dp"
+            android:translationY="51dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/cancel"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/filters"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="#121826"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/reset"
+                android:textSize="14sp"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="#006C32"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="335dp"
+            android:layout_height="465dp"
+            android:translationY="119dp"
+            android:layout_centerHorizontal="true">
+            
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                app:cardCornerRadius="24dp"
+                android:backgroundTint="#F5F7FF">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:translationX="20dp"
+                        android:translationY="13.5dp"
+                        android:text="@string/date"
+                        android:textSize="10sp"
+                        android:textColor="#5C616F"
+                        android:fontFamily="@font/inter_medium"/>
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:translationX="20dp"
+                        android:translationY="33.5dp"
+                        android:hint="@string/_01_sep_2021_10_sep_2021"
+                        android:textSize="14sp"
+                        android:textColorHint="#040C22"
+                        android:textColor="#040C22"
+                        android:fontFamily="@font/inter_medium"/>
+                    
+                    <ImageView
+                        android:id="@+id/date_picker"
+                        android:layout_width="18dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:translationX="-20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/calendar"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:translationY="103dp"
+                android:text="@string/account"
+                android:textSize="14sp"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="#121826"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="179dp"
+                android:translationY="133dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/transactions_filter_item"/>
+
+            </ScrollView>
+
+            <RelativeLayout
+                android:layout_width="335dp"
+                android:layout_height="24dp"
+                android:translationY="345dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_range"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/inter_medium"
+                    android:textSize="14sp"
+                    android:textColor="#121826"/>
+
+                <TextView
+                    android:id="@+id/price_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/_10sar_250_000sar"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/inter_semi_bold"
+                    android:textSize="14sp"
+                    android:textColorHint="#006C32"
+                    android:textColor="#006C32"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ranges"
+                android:layout_width="335dp"
+                android:layout_height="24dp"
+                android:translationY="393dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/inter_medium"
+                    android:textSize="12sp"
+                    android:textColor="#CCD6FF"/>
+
+                <TextView
+                    android:id="@+id/upper_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/_10_000_000"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/inter_semi_bold"
+                    android:textSize="12sp"
+                    android:textColorHint="#CCD6FF"
+                    android:textColor="#CCD6FF"/>
+
+            </RelativeLayout>
+
+            <com.google.android.material.slider.RangeSlider
+                android:layout_width="335dp"
+                android:layout_height="24dp"
+                android:translationY="417dp"
+                app:trackColor="#006C32"
+                app:thumbColor="#006C32"
+                android:valueFrom="0"
+                android:valueTo="10000000"
+                app:values="@array/slider_values"
+                android:contentDescription="@string/range_slider"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="335dp"
+            android:layout_height="62dp"
+            android:translationY="610dp"
+            android:background="@drawable/rounded_box"
+            android:layout_centerHorizontal="true"
+            app:backgroundTint="#006C32"
+            android:gravity="center"
+            android:text="@string/cont"
+            android:textSize="16sp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:textColor="#FCFCFC"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
