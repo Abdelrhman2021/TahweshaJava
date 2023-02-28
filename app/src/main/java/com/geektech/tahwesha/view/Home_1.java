@@ -16,7 +16,5 @@ public class Home_1 extends AppCompatActivity {
         setContentView(R.layout.home_1);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setItemBackgroundResource(android.R.color.transparent);
-
-
     }
 }

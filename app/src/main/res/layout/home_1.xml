@@ -48,7 +48,7 @@
 
         <ImageView
             android:layout_alignStart="@+id/search"
-            android:translationX="-50dp"
+            android:translationX="-45dp"
             android:layout_width="38dp"
             android:layout_height="38dp"
             android:translationY="13dp"
@@ -69,8 +69,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:translationY="80dp"
-        android:fillViewport="true">
+        android:translationY="80dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -244,22 +243,22 @@
 
                     </RelativeLayout>
 
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:translationX="280dp"
+                        android:translationY="20dp">
+
+                        <include
+                            android:id="@+id/forward_button"
+                            layout="@layout/forward_button"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"/>
+
+                    </RelativeLayout>
+
                 </androidx.cardview.widget.CardView>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:translationX="315dp"
-                android:translationY="20dp">
-
-                <include
-                    android:id="@+id/forward_button"
-                    layout="@layout/forward_button"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_margin="5dp"/>
 
             </RelativeLayout>
 
@@ -301,48 +300,49 @@
                             android:textColorHint="#FFFFFF"
                             android:hint="@string/get_points_for_sorting_your_ntransactions"/>
 
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="16dp"
+                            android:layout_centerVertical="true">
+
+                            <include
+                                android:id="@+id/noti_icon"
+                                layout="@layout/noti_icon"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="3dp"/>
+
+                            <ImageView
+                                android:layout_gravity="top|end"
+                                android:elevation="10dp"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/noti_ellipse"
+                                android:contentDescription="@string/ellipse_icon"/>
+
+                        </FrameLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationX="280dp"
+                            android:layout_centerVertical="true">
+
+                            <include
+                                android:id="@+id/forward_buttonn"
+                                layout="@layout/forward_button"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="5dp"/>
+
+                        </RelativeLayout>
+
                     </RelativeLayout>
 
                 </androidx.cardview.widget.CardView>
 
             </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:translationX="315dp"
-                android:translationY="375dp">
-
-                <include
-                    android:id="@+id/forward_buttonn"
-                    layout="@layout/forward_button"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_margin="5dp"/>
-
-            </RelativeLayout>
-
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:translationX="45dp"
-                android:translationY="373dp">
-
-                <include
-                    android:id="@+id/noti_icon"
-                    layout="@layout/noti_icon"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_margin="3dp"/>
-
-                <ImageView
-                    android:layout_gravity="end"
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:src="@drawable/noti_ellipse"
-                    android:contentDescription="@string/ellipse_icon" />
-
-            </FrameLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
