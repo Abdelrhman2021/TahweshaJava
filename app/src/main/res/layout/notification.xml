@@ -32,7 +32,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/transactions"
+            android:text="@string/notification"
             android:fontFamily="@font/inter_medium"
             android:textSize="16sp"
             android:textColor="#131313"
@@ -80,27 +80,56 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:translationY="117dp"
+                    android:translationY="34dp"
                     android:layout_centerHorizontal="true"
-                    tools:listitem="@layout/transactions_item"
-                    tools:itemCount="4" />
+                    tools:listitem="@layout/notification_item_1"
+                    tools:itemCount="1" />
 
-                <TextView
-                    android:translationY="335dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/yesterday"
-                    android:textColor="#9CA3AF"
-                    android:textSize="12sp"
-                    android:fontFamily="@font/inter_medium"/>
-
-                <androidx.recyclerview.widget.RecyclerView
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:translationY="377dp"
-                    android:layout_centerHorizontal="true"
-                    tools:listitem="@layout/transactions_item"
-                    tools:itemCount="4" />
+                    android:layout_height="match_parent"
+                    android:translationY="154dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yesterday"
+                        android:textColor="#9CA3AF"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/inter_medium"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:translationY="33dp"
+                        android:layout_centerHorizontal="true"
+                        tools:listitem="@layout/notification_item_2"
+                        tools:itemCount="4" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:translationY="543dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/last_7_days"
+                        android:textColor="#8F92A1"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/inter_medium"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:translationY="33dp"
+                        android:layout_centerHorizontal="true"
+                        tools:listitem="@layout/notification_item_3"
+                        tools:itemCount="4" />
+
+                </RelativeLayout>
 
                 <ImageView
                     android:layout_width="match_parent"

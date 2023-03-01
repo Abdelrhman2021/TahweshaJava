@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="335dp"
+    android:layout_height="48dp"
+    android:layout_marginBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#FFAE58">
+
+        <ImageView
+            android:gravity="center"
+            android:id="@+id/noti_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/today_outline_1"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationY="4dp"
+        android:translationX="62dp"
+        android:fontFamily="@font/inter_medium"
+        android:textSize="14sp"
+        android:hint="@string/shopping_budget_has_exceeds"
+        android:textColorHint="#030319"
+        android:textColor="#030319"/>
+
+    <TextView
+        android:id="@+id/body"
+        android:translationY="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:translationX="62dp"
+        android:fontFamily="@font/inter_regular"
+        android:textSize="12sp"
+        android:hint="@string/your_utilities_budget_has_exceeds"
+        android:textColorHint="#8F92A1"
+        android:textColor="#8F92A1"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/inter_medium"
+        android:textSize="12sp"
+        android:hint="@string/_3_40_pm"
+        android:textColorHint="#8F92A1"
+        android:textColor="#8F92A1"/>
+
+</RelativeLayout>

@@ -13,7 +13,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".view.Home_1"
+            android:name=".view.Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -97,7 +97,10 @@
             android:exported="false">
         </activity>
 
-
+        <activity
+            android:name=".view.Home_1"
+            android:exported="false">
+        </activity>
 
         <activity
             android:name=".view.Account"
@@ -142,6 +145,12 @@
 
         <activity
             android:name=".view.Notification"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".view.Home_Search"
+            android:theme="@style/Theme.TahweshaJava.PopUp"
             android:exported="false">
         </activity>
 

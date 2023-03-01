@@ -100,4 +100,18 @@
     <string name="_10_000_000">10,000,000</string>
     <string name="cont">Continue</string>
     <string name="range_slider">range_slider</string>
+    <string name="notification">Notification</string>
+    <string name="cashback_50">Cashback 50%</string>
+    <string name="get_50_cashback_for_pizza_hut">Get 50% cashback for Pizza Hut</string>
+    <string name="claim_it_now">Claim it now</string>
+    <string name="getbrees_flex_friday_deal">GetBrees Flex Friday Deal</string>
+    <string name="_10_39_am">10:39 AM</string>
+    <string name="tplace">TPLACE</string>
+    <string name="use_tplace_promo_code">Use TPLACE Promo Code</string>
+    <string name="use_promo_code_for_the_place">Use Promo Code for The’Place</string>
+    <string name="promo">Promo</string>
+    <string name="_3_40_pm">3:40 PM</string>
+    <string name="shopping_budget_has_exceeds">Shopping budget has exceeds..</string>
+    <string name="your_utilities_budget_has_exceeds">Your Utilities budget has exceeds....</string>
+    <string name="last_7_days">Last 7 days</string>
 </resources>
